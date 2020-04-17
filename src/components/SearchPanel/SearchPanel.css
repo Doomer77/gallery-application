@@ -1,0 +1,40 @@
+.form-control{
+  outline: none;
+  border: none;
+}
+
+.form-control::placeholder{
+  color: blueviolet;
+}
+
+.form-control:focus {
+  color: blueviolet;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-success {
+  color: #fff;
+  border: 0.1rem solid #fff;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: blueviolet; 
+  border-color: blueviolet;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #ab88b6;
+  border-color: #ab88b6;
+}
+
+.btn.focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+  box-shadow: none; 
+}

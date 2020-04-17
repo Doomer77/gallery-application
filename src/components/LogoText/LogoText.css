@@ -1,0 +1,8 @@
+.navbar-dark .navbar-brand {
+  color: rgba(245, 225, 225, 0.9);
+  font-weight: 900;
+}
+
+.navbar-dark .navbar-brand span {
+  color: rgba(253, 153, 121, 0.9);
+}
