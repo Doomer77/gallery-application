@@ -1,0 +1,26 @@
+[
+  {
+    "id" : 1,
+    "label" : "Best friends",
+    "date": {
+      "day": 19,
+      "month" : 4,
+      "year" : 2020
+    },
+    "src" : "img/photo-185.jpg",
+    "category": "animals",
+    "subcategory": "horses"
+  },
+  {
+    "id" : 2,
+    "label" : "Reeds",
+    "date": {
+      "day": 20,
+      "month" : 4,
+      "year" : 2020
+    },
+    "src" : "img/photo-249.jpg",
+    "category": "plants",
+    "subcategory": "cane"
+  }
+]
