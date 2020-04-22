@@ -1,0 +1,6 @@
+.section-cards {
+    width: 100%;
+    padding: 3rem 0;
+    background: linear-gradient(rgb(232, 232, 232), rgba(229, 229, 229, 0.58)), url('../../img/photo-162.jpg') center no-repeat;
+    background-size: cover;
+}
