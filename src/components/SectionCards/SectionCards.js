@@ -4,7 +4,9 @@ import './SectionCards.css';
 
 const SectionCards = ( { card } ) => {
     const elements = card.map((item) => {
-        return(<Card {...item}/>)
+        const { id, ...itemProps } = item;
+        return(<Card {...itemProps} key={id}/>)
+
     })
     return (
         <section className="section-cards">
