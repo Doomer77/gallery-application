@@ -16,6 +16,8 @@ const App = () => {
 		{ 	id: 4, label: "Reeds", src: src2 , date: {day: '20', month : '04', year : '2020'}, category: "plants", subcategory: "cane"}
 	]
 
+	console.log(cardData[0].category);
+
 	return (
 		<div className="container-fluid">
 			<Header />

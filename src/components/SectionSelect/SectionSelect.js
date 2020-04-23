@@ -1,11 +1,17 @@
 import React from "react";
 import './SectionSelect.css';
 import SelectCategory from "../SelectCategory";
+import SelectSubCategory from '../SelectSubCategory/SelectSubCategory';
 
 const SectionSelect = () => {
     return (
         <section className="select">
-            <SelectCategory />
+            <div className="container">
+                <div className="row justify-content-md-center">
+                    <SelectCategory />
+                    <SelectSubCategory />
+                </div>
+            </div>
         </section>
     )
 }
