@@ -11,17 +11,15 @@ const App = () => {
 
 	const cardData = [
 		{ 	id: 1, label: "Best friends", src: src1 , date: {day: '19', month : '04', year : '2020'}, category: "animals", subcategory: "horses"},
-		{ 	id: 2, label: "Reeds", src: src2 , date: {day: '20', month : '04', year : '2020'}, category: "plants", subcategory: "cane"},
+		{ 	id: 2, label: "The reeds were noisy", src: src2 , date: {day: '20', month : '04', year : '2020'}, category: "plants", subcategory: "cane"},
 		{ 	id: 3, label: "Best friends", src: src1 , date: {day: '19', month : '04', year : '2020'}, category: "animals", subcategory: "horses"},
-		{ 	id: 4, label: "Reeds", src: src2 , date: {day: '20', month : '04', year : '2020'}, category: "plants", subcategory: "cane"}
+		{ 	id: 4, label: "The reeds were noisy", src: src2 , date: {day: '20', month : '04', year : '2020'}, category: "plants", subcategory: "cane"}
 	]
-
-	console.log(cardData[0].category);
 
 	return (
 		<div className="container-fluid">
 			<Header />
-			<SectionSelect />
+			<SectionSelect card = { cardData }/>
 			<SectionCards card = { cardData }/>
 		</div>
 	)
