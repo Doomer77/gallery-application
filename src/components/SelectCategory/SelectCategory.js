@@ -2,8 +2,8 @@ import React from "react";
 import './SelectCategory.css';
 
 const SelectCategory = ({ selectCategory }) => {
-    const selectItem = selectCategory.map(({category}) => {
-        return <option value = { category }>{ category }</option>
+    const selectItem = selectCategory.map(({category, id}) => {
+        return <option key = {id} value = { category }>{ category }</option>
     })
 
     return (
