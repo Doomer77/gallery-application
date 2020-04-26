@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import NavigationPanel from '../NavigationPanel/NavigationPanel';
+import NavigationPanel from '../NavigationPanel';
 
 //Header
 const Header = () => {

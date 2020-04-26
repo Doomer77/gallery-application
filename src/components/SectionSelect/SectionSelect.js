@@ -1,7 +1,7 @@
 import React from "react";
 import './SectionSelect.css';
 import SelectCategory from "../SelectCategory";
-import SelectSubCategory from '../SelectSubCategory/SelectSubCategory';
+import SelectSubCategory from '../SelectSubCategory';
 
 const SectionSelect = ({ card }) => {
     return (

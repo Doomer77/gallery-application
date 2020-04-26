@@ -5,7 +5,7 @@ import './NavBarCollaps.css';
 
 const NavBarCollaps = () => {
 	return(
-		<div className="collapse navbar-collapse" id="navbarSupportedContent">
+		<div className="collapse navbar-collapse">
 			<NavList />
 			<SearchPanel />
 		</div>

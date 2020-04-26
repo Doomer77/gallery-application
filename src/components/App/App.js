@@ -1,7 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Header from '../Header/Header';
+import Header from '../Header';
 import SectionSelect from "../SectionSelect/SectionSelect";
-import SectionCards from "../SectionCards/SectionCards";
+import SectionCards from "../SectionCards";
 import src1 from '../../img/photo-192.jpg';
 import src2 from '../../img/photo-249.jpg';
 import './App.css';
