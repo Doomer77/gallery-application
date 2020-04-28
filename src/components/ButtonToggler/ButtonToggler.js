@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './ButtonToggler.css';
 
 //ButtonToggler
-const ButtonToggler = () => {
-	return (
-		<button className="navbar-toggler" type="button">
-    	<span className="navbar-toggler-icon"></span>
-  	</button>
-	)
-}
+export default class ButtonToggler extends Component{
 
-export default ButtonToggler;
+	test = () => {
+		console.log(`this button`);
+	}
+
+	render() {
+		return (
+			<button className="navbar-toggler" type="button" onClick = { this.test }>
+				<span className="navbar-toggler-icon"></span>
+			</button>
+		)
+	}
+};
