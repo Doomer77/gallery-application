@@ -4,13 +4,10 @@ import './ButtonToggler.css';
 //ButtonToggler
 export default class ButtonToggler extends Component{
 
-	test = () => {
-		console.log(`this button`);
-	}
-
 	render() {
+		const { menuOpen } = this.props;
 		return (
-			<button className="navbar-toggler" type="button" onClick = { this.test }>
+			<button className="navbar-toggler" type="button" onClick={ menuOpen }>
 				<span className="navbar-toggler-icon"></span>
 			</button>
 		)
