@@ -12,15 +12,21 @@ export default class NavigationPanel extends Component{
 	}
 
 	menuOpen = () => {
-		console.log(`this button`);
-	}
+		this.setState(({visibility}) => {
+			return {
+				visibility: !visibility
+			}
+		});
+	};
+
+
 
 	render() {
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 				<LogoText />
 				<ButtonToggler menuOpen = {this.menuOpen} />
-				<NavBarCollaps />
+				<NavBarCollaps menuVisibility = { this.state.visibility }/>
 			</nav>
 		)
 	}
