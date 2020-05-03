@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import { Container } from "react-bootstrap";
 import Header from '../Header';
 import SectionSelect from "../SectionSelect/SectionSelect";
 import SectionCards from "../SectionCards";
@@ -19,11 +20,11 @@ export  default class App extends Component{
 
 	render() {
 		return (
-			<div className="container-fluid">
+			<Container fluid>
 				<Header />
 				<SectionSelect card = { this.state.cardData }/>
 				<SectionCards card = { this.state.cardData }/>
-			</div>
+			</Container>
 		)
 	}
 
