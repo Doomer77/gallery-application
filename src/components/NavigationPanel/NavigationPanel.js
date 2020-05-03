@@ -1,7 +1,7 @@
 //NavigationPanel
 import React, { Component } from 'react';
 import LogoText from '../LogoText/LogoText';
-import ButtonToggler from '../NavLIst/ButtonToggler/ButtonToggler';
+import ButtonToggler from '../ButtonToggler/ButtonToggler';
 import NavBarCollaps from '../NavBarCollaps/NavBarCollaps';
 import './NavigationPanel.css';
 

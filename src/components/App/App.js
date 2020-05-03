@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import Header from '../Header';
 import SectionSelect from "../SectionSelect/SectionSelect";
