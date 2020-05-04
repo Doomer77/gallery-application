@@ -1,20 +1,20 @@
 import React from "react";
-import Card from "../Card/Card";
+import { Container, Row } from "react-bootstrap";
 import './SectionCards.css';
+import PhotoCard from "../PhotoCard/PhotoCard";
 
 const SectionCards = ( { card } ) => {
     const elements = card.map((item) => {
         const { id, ...itemProps } = item;
-        return(<Card {...itemProps} key={id}/>)
-
+        return(<PhotoCard {...itemProps} key={id}/>)
     })
     return (
         <section className="section-cards">
-            <div className="container-fluid">
-                <div className="row">
+            <Container fluid>
+                <Row>
                     {elements}
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
     )
 }

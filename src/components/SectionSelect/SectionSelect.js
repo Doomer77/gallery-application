@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 import './SectionSelect.css';
 import SelectCategory from "../SelectCategory";
 import SelectSubCategory from '../SelectSubCategory';
@@ -6,12 +7,12 @@ import SelectSubCategory from '../SelectSubCategory';
 const SectionSelect = ({ card }) => {
     return (
         <section className="select">
-            <div className="container">
-                <div className="row justify-content-md-center">
+            <Container>
+                <Row className="justify-content-md-center">
                     <SelectCategory selectCategory = { card }/>
                     <SelectSubCategory />
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
     )
 }

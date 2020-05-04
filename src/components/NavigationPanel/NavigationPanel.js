@@ -1,5 +1,6 @@
 //NavigationPanel
 import React, { Component } from 'react';
+import { Navbar} from "react-bootstrap";
 import LogoText from '../LogoText/LogoText';
 import ButtonToggler from '../ButtonToggler/ButtonToggler';
 import NavBarCollaps from '../NavBarCollaps/NavBarCollaps';
@@ -37,13 +38,13 @@ export default class NavigationPanel extends Component {
 	render() {
 		const { visibility, width } = this.state;
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<Navbar bg="dark" variant="dark" expand="lg">
 				<LogoText />
 				<ButtonToggler menuOpen={this.menuOpen} />
 				{visibility || width > 920
 					? <NavBarCollaps />
 					: null}
-			</nav>
+			</Navbar>
 		)
 	}
 }

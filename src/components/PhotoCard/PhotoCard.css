@@ -19,7 +19,7 @@
     margin-bottom: 1rem;
 }
 
-.card h5.card-title {
+.card-title {
     color: white;
     font-weight: 700;
     font-size: 2rem;
@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-.card-img, .card-img-top {
+.card-img-top {
     position: relative;
     border-radius: 1rem 1rem 0rem 0rem;
     filter: brightness(70%);
@@ -53,7 +53,7 @@
     cursor: pointer;
 }
 
-.card-img, .card-img-top:hover {
+.card-img-top:hover {
     border-radius: 1rem 1rem 0rem 0rem;
     filter: brightness(100%);
 }

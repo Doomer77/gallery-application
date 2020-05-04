@@ -1,4 +1,5 @@
 import React from "react";
+import {Col, Form} from "react-bootstrap";
 import './SelectCategory.css';
 
 const SelectCategory = ({ selectCategory }) => {
@@ -7,13 +8,17 @@ const SelectCategory = ({ selectCategory }) => {
     })
 
     return (
-        <div className="form-group col-md-6 col-sm-6">
-            <label htmlFor="exampleFormControlSelect1">Select a category</label>
-            <select className="form-control" id="exampleFormControlSelect1">
-                <option selected value>Сategories</option>
-                {selectItem}
-            </select>
-        </div>
+        <Col md="6" sm="6">
+            <Form>
+                <Form.Group controlId="exampleForm.ControlSelect1">
+                    <Form.Label>Select a category</Form.Label>
+                    <Form.Control as="select">
+                        <option defaultValue>Сategories</option>
+                        {selectItem}
+                    </Form.Control>
+                </Form.Group>
+            </Form>
+        </Col>
     )
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar } from "react-bootstrap";
 import './ButtonToggler.css';
 
 //ButtonToggler
@@ -7,9 +8,7 @@ export default class ButtonToggler extends Component{
 	render() {
 		const { menuOpen } = this.props;
 		return (
-			<button className="navbar-toggler" type="button" onClick={ menuOpen }>
-				<span className="navbar-toggler-icon"></span>
-			</button>
+			<Navbar.Toggle aria-controls="basic-navbar-nav" onClick={ menuOpen }/>
 		)
 	}
 };
